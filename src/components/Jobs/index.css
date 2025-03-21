@@ -1,0 +1,469 @@
+.jobs-bg-container {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* General styling for the entire page */
+.jobs-bg-container {
+  display: flex;
+  background-color: #121212; /* Dark background as per the image */
+  min-height: 100vh;
+  padding: 20px;
+  color: #ffffff; /* White text for contrast */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Sidebar (Profile and Filters) */
+.profile-filter-container {
+  width: 30%;
+  margin-right: 20px;
+}
+
+/* Profile Section */
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #6062ec !important;
+}
+
+.short-bio {
+  font-size: 16px;
+  color: #536ea5; /* Lighter gray for the bio */
+  margin: 0;
+}
+
+/* Profile Loading and Failure Views */
+.profile-loading-view-container,
+.profile-failure-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #1e1e2f; */
+  border-radius: 10px;
+  height: 200px;
+}
+
+.profile-failure-view-container button {
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Horizontal Rule */
+.hr-rule {
+  border: 1px solid #64748a;
+  margin: 20px 0;
+}
+
+/* Employment Type and Salary Range Filters */
+.profile-filter-container h1 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.profile-filter-container div {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.profile-view-container {
+  background-color: #1e1e2f;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-filter-container input[type='checkbox'],
+.profile-filter-container input[type='radio'] {
+  margin-right: 10px;
+  accent-color: #4f46e5; /* Blue accent for checkboxes and radio buttons */
+}
+
+.profile-filter-container label {
+  font-size: 16px;
+  color: #b0b0b0;
+}
+
+.employment-type-filters-container {
+  list-style-type: none;
+  padding: 0;
+}
+
+.salary-filters-container {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Jobs Search and Listings Section */
+.jobs-search-container {
+  width: 70%;
+}
+
+/* Search Bar */
+.search-bar-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: #2c2c3e 2px solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.search-bar::placeholder {
+  color: #b0b0b0;
+}
+
+.search-bar-container button {
+  width: 80px;
+  background: #272727;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.search-icon {
+  color: #b0b0b0;
+  font-size: 20px;
+}
+
+/* Jobs List */
+.jobs-list-container {
+  list-style-type: none;
+  padding: 0;
+}
+
+.job-item-link {
+  text-decoration: none;
+}
+
+.jobs-item {
+  background-color: #272727;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Job Item Top Section */
+.job-top-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.job-top-right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+}
+
+.job-rating {
+  font-size: 16px;
+  color: #f5c518; /* Yellow for the rating */
+  margin: 5px 0 0 0 !important;
+}
+
+.star-icon {
+  margin-right: 3px;
+}
+
+/* Job Type and Package */
+.job-location-type-package-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.job-location-type-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.job-icons {
+  margin-right: 4px;
+}
+
+.job-type,
+.job-location,
+.job-packange {
+  font-size: 16px;
+  color: #b0b0b0;
+}
+
+/* Job Description */
+.job-description-container {
+  margin-top: 15px;
+}
+
+.job-description-h1 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.job-description {
+  font-size: 16px;
+  color: #b0b0b0;
+  line-height: 1.5;
+}
+
+/* Job Horizontal Rule */
+.job-hr-rule {
+  border: 1.5px solid #b0b0b0;
+  margin: 15px 0;
+}
+
+/* No Jobs Found View */
+.no-job-found-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.no-job-found-img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.no-job-h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.no-job-description {
+  font-size: 16px;
+  color: #b0b0b0;
+  text-align: center;
+}
+
+/* Jobs List Loading and Failure Views */
+.jobs-list-loading-view-container,
+.jobs-list-failure-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 50vh; */
+}
+
+.jobs-list-failure-view-container button {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media Query for Small Devices (768px and below) */
+@media (max-width: 768px) {
+  /* Adjust the main container to stack elements vertically */
+  .jobs-bg-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  /* Sidebar (Profile and Filters) */
+  .profile-filter-container {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Profile Section */
+  .profile-view-container {
+    padding: 15px;
+  }
+
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .short-bio {
+    font-size: 14px;
+  }
+
+  /* Profile Loading and Failure Views */
+  .profile-loading-view-container,
+  .profile-failure-view-container {
+    height: 150px;
+  }
+
+  .profile-failure-view-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* Employment Type and Salary Range Filters */
+  .profile-filter-container h1 {
+    font-size: 16px;
+  }
+
+  .profile-filter-container label {
+    font-size: 14px;
+  }
+
+  .profile-filter-container input[type='checkbox'],
+  .profile-filter-container input[type='radio'] {
+    margin-right: 8px;
+  }
+
+  /* Jobs Search and Listings Section */
+  .jobs-search-container {
+    width: 100%;
+  }
+
+  /* Search Bar */
+  .search-bar-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .search-bar {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .search-icon {
+    font-size: 18px;
+  }
+
+  /* Jobs List */
+  .jobs-item {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Job Item Top Section */
+  .job-top-section {
+    margin-bottom: 10px;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .job-title {
+    font-size: 18px;
+  }
+
+  .job-rating {
+    font-size: 14px;
+  }
+
+  /* Job Type and Package */
+  .job-location-type-package-container {
+    margin-bottom: 10px;
+  }
+
+  .job-type,
+  .job-packange {
+    font-size: 14px;
+  }
+
+  /* Job Description */
+  .job-description-h1 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .job-description {
+    font-size: 14px;
+  }
+
+  /* Job Horizontal Rule */
+  .job-hr-rule {
+    margin: 10px 0;
+  }
+
+  /* No Jobs Found View */
+  .no-job-found-view-container {
+    height: 40vh;
+  }
+
+  .no-job-found-img {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .no-job-h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .no-job-description {
+    font-size: 14px;
+  }
+
+  /* Jobs List Loading and Failure Views */
+  .jobs-list-loading-view-container,
+  .jobs-list-failure-view-container {
+    height: 40vh;
+  }
+
+  .jobs-list-failure-view-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

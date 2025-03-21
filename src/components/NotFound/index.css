@@ -1,0 +1,24 @@
+.not-found-bg-container {
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.not-found-img {
+  margin: 10px;
+}
+
+.not-found-h1 {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.not-found-p {
+  font-size: 18px;
+  color: #7e858e;
+}
